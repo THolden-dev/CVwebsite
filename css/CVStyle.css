@@ -1,0 +1,20 @@
+body, html
+{
+    background-color: black;
+}
+.ExperienceEntry
+{
+    display: grid;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    border: solid 2px rgb(23, 201, 0);
+    color: rgb(23, 201, 0);
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.TopInfo
+{
+  text-align: center;
+  font-size: 30px;
+}
