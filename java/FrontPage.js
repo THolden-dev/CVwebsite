@@ -129,10 +129,9 @@ function spawnRain(Xpos,NumOfChars,FontSize)
     RainText.className = "RainingText";
     //RainText.fon = FontSize + "px";
     RainText.style.left = Math.round(Xpos) + "px";
-    RainText.style.top = -(NumOfChars*FontSize) + "px";
+    RainText.style.top = (-300) + "px";
     RainText.textContent = "";
-    console.log(Xpos);
-    Container.appendChild(RainText);
+    document.body.appendChild(RainText);
 }
 
 function randomRainText(NumOfChars,currentText)
@@ -163,7 +162,7 @@ function randomRainText(NumOfChars,currentText)
 function handleRainingText()
 {
     let RainTexts = document.getElementsByClassName("RainingText");
-    const FontSize = 20;
+    const FontSize = 15;
     const NumberOfChars = 8;
     const refreshRate = 10;
     const NumOfRain = window.innerWidth/FontSize;
@@ -171,9 +170,13 @@ function handleRainingText()
     
     for (let i = 0; i < RainTexts.length; i++)
     {
+        if (i === 0)
+        {
+           
+            console.log(RainTexts[i].offsetTop);
+        }
         RainTexts[i].style.top = (pixelToNum(RainTexts[i].style.top) + Speed) + "px";
         RainTexts[i].textContent = randomRainText(NumberOfChars,RainTexts[i].textContent);
-        console.log(RainTexts[i].style.left)
         
         if (pixelToNum(RainTexts[i].style.top) > window.innerHeight)
         {
@@ -184,6 +187,7 @@ function handleRainingText()
     
     if (RainTexts.length < NumOfRain)
     {
+        
         SpawnX = window.innerWidth*Math.random();
         
         spawnRain(SpawnX,NumberOfChars,FontSize);

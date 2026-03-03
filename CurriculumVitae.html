@@ -6,11 +6,152 @@
         <script src="java/CVJava.js" defer></script>
     </head>
     <body>
+        <canvas class="Background" width="200" height="100"></canvas>
+        <canvas class="Background" width="200" height="100"></canvas>
+        <canvas class="Background" width="200" height="100"></canvas>
         <div>
-            <div class="ExperienceEntry" style="position: absolute; left: 100px; top: 100px;">
-                <div><p class="TopInfo">hello</p></div>
-                <div><p class="TopInfo">hello</p></div>
-                <div><p class="TopInfo">hello</p></div>
+            <div class="ExperienceEntry">
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">University</div>
+                    <div class="TopInfo">Degree title</div>
+                    <div class="TopInfo">Date</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">Queen Mary University of London</div>
+                    <div class="TopInfo">Robotics Engineering</div>
+                    <div class="TopInfo">2024-Present</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Modules</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="ContentText">
+                    <p>Engineering Design</p> 
+                    <p>Computational & Mathematical Modelling 1</p> 
+                    <p>Computational & Mathematical Modelling 2</p> 
+                    <p>Procedural Programming</p> 
+                    <p>Object Oriented Programming</p> 
+                    <p>Experimental Design and Practice</p> 
+                    <p>Robotics Design</p> 
+                    <p>Neuromechanics and Bioelectricity of Movement</p> 
+                    <p>Numerical Methods and Data Science in Engineering</p>
+                    <p>Exploring Engineering</p>
+                    <p>Experimental Design and Practice 1</p>
+                    <p>Experimental Design and Practice 2</p>
+                </div>
+                <div class="TopInfoContainer" style="border-top: 2px solid rgb(23, 201, 0);">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Media</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="CVImagesContainer" onmouseleave="MouseLeft(this)">
+                    <div class="CVImageDiv"><img src="images/IdealGas.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><img src="images/stretcher.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><img src="images/car.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><img src="images/soldering.jpeg" class="CVImage"></div>
+                    <div class="CVImageSpacer"  style="padding-bottom: 0px;"></div>
+                </div>
+            </div>
+            <div class="ExperienceEntry">
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">University</div>
+                    <div class="TopInfo">Degree title</div>
+                    <div class="TopInfo">Date</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">University of Oxford</div>
+                    <div class="TopInfo">Certificate of Higher Education in Philosophy</div>
+                    <div class="TopInfo">2021-2023</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Modules</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="ContentText">
+                    <p>Introduction to Philosophy</p> 
+                    <p>Philosophy of Mind</p> 
+                    <p>Philosophy of Science</p> 
+                    <p>Philosophy of Religion</p> 
+                    <p>Beginning Linear Algebra</p> 
+                    <p>Ethics: An Introduction</p> 
+                    <p>Theory of Knowledge</p>
+                </div>
+                <div class="TopInfoContainter" style="border-top: 2px solid rgb(23, 201, 0);border-bottom: 2px solid rgb(23, 201, 0);">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Optional Modules taken</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="ContentText">
+                    <p>Pratical Deep Learning and Computer Vision with Python</p> 
+                    <p>Beginning Linear Algebra</p> 
+                    <p>Exploring Animal Behaviour</p> 
+                    <p>Introduction to Networks & Cybersecurity</p>
+                </div>
+            </div>
+            <div class="ExperienceEntry">
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">Company</div>
+                    <div class="TopInfo">Role</div>
+                    <div class="TopInfo">Date</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">Centre for Advanced Robotics @ Queen Mary</div>
+                    <div class="TopInfo">Undergraduate Researcher</div>
+                    <div class="TopInfo">2024-Present</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Experience Description</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="ContentText">
+                    <p>Manufactoring robotic systems for research.</p> 
+                    <p>Working with ROS to create robust robotic software.</p> 
+                    <p>Developing robotic haptic control systems with Touch X haptic.</p> 
+                    <p>Developing optical stiffness sensor for tumour detection.</p> 
+                    <p>Collaborating professionally in a research team.</p> 
+                </div>
+                <div class="TopInfoContainer" style="border-top: 2px solid rgb(23, 201, 0);">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Media</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="CVImagesContainer" onmouseleave="MouseLeft(this)">
+                    <div class="CVImageDiv"><img src="images/RoboticResearch/TouchX.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><img src="images/RoboticResearch/StiffnessSensor.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><img src="images/RoboticResearch/AirSensor.jpeg" class="CVImage"></div>
+                    <div class="CVImageDiv"><video class="CVImage" controls>
+                        <source src="images/RoboticResearch/PeumaticHand.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video></div>
+                    <div class="CVImageSpacer"  style="padding-bottom: 0px;"></div>
+                </div>
+            </div>
+            <div class="ExperienceEntry">
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">Company</div>
+                    <div class="TopInfo">Role</div>
+                    <div class="TopInfo">Date</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo">Summer Boarding Courses</div>
+                    <div class="TopInfo">Computer Science Tutor</div>
+                    <div class="TopInfo">2024</div>
+                </div>
+                <div class="TopInfoContainer">
+                    <div class="TopInfo"></div>
+                    <div class="TopInfo">Experience Description</div>
+                    <div class="TopInfo"></div>
+                </div>
+                <div class="ContentText">
+                    <p>Creating an effective and comprehensive computer science syllabus.</p> 
+                    <p>Teaching computer science to students in person.</p> 
+                    <p>Accompanying students to field trips such as Culham Centre for Fusion Energy.</p> 
+                    <p>Giving one-to-one tutorials to students to ensure their understanding in topics they find difficult.</p> 
+                    <p>Helping students design and develop projects for them to present.(e.g disaster rescue robots).</p> 
+                </div>
             </div>
         </div>
     </body>

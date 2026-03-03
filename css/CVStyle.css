@@ -2,19 +2,91 @@ body, html
 {
     background-color: black;
 }
-.ExperienceEntry
+.ExperienceEntry {
+    position: absolute;
+    width: 60%;                             
+    justify-content: center;
+    border: 2px solid rgb(23, 201, 0);
+    color: rgb(23, 201, 0);
+    border-radius: 7px;
+    background-color: black;
+}
+.TopInfoContainer
 {
     display: grid;
-    width: 200px;
-    height: 100px;
-    align-items: center;
-    border: solid 2px rgb(23, 201, 0);
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    column-gap: 20%;                         
+    row-gap: 5%;
+    border-bottom: 2px solid rgb(23, 201, 0);
     color: rgb(23, 201, 0);
-    grid-template-columns: 1fr 1fr 1fr; 
 }
 
 .TopInfo
 {
   text-align: center;
-  font-size: 30px;
+  font-size: 120%;
+
 }
+
+.ContentText
+{
+    margin: 5px;
+    font-size: 120%;
+    word-break: break-all;
+    max-height: 50px;
+    transition: max-height 2s ease;
+    
+    text-align: center;
+    overflow: hidden;
+    
+}
+.ContentText:hover
+{
+   max-height: 1000px;
+}
+
+.CVImagesContainer
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    flex-direction: row;
+    max-height: 20px;
+    overflow: hidden;
+    padding-bottom: 0px;
+    transition: max-height 2s ease, padding-bottom 2s ease;
+}
+
+.CVImagesContainer > * {
+  flex: 0 0 33.3333%;
+}
+
+.CVImagesContainer:hover
+{
+    max-height: 1000px;
+}
+
+.CVImageDiv
+{
+    
+    transition: transform 1s ease;
+}
+.CVImage
+{
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+.CVImageSpacer
+{
+    flex-basis: 100%;
+    transition: padding-bottom 1s ease;
+}
+.Background
+{
+    display: block;
+}
+
