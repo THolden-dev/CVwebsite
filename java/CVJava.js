@@ -151,7 +151,10 @@ function floatEntry(ExpEntries,i)
         
     
         CenterY = pixelToNum(ExpEntries[i - 1].style.top) + ExpEntries[i - 1].offsetHeight + DisBetween;
-        
+    }
+    else
+    {
+        CenterY = window.innerHeight/9;
     }
     if (CenterX - pixelToNum(ExpEntry.style.left) > Radius)
     {
